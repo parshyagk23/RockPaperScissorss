@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="index.css" />
+   
+
+  </head>
+  <body>
+    <section class="title-score">
+      <div class="all">
+      <div class="title">
+        <h2>ROCK</h2>
+        <h2>PAPER</h2>
+        <h2>SCISSORS</h2>
+      </div>
+      <div class="score">
+        <div class="com-score">
+          <h2>COMPUTER SCORE</h2>
+          <h1>0</h1>
+        </div>
+  
+        <div class="user-score">
+          <h2>&nbsp;YOUR &nbsp; SCORE</h2>
+          <h1>0</h1>
+        </div>
+      </div>
+    </div>
+    </section>  
+    
+    <section class="game">
+      <a href="" class="choice-btn" data-num="Rock">
+        <div class="choice rock" >
+          <img src="img/Rock.png" alt=""  height="86px"  width= "119px" >
+        </div>
+      </a>
+      <a class="choice-btn" data-num="Scissors">
+        <div class="choice scissors" >
+          <img src="img/Scissors.png" alt=""  height="86px"  width= "80px">
+        </div>
+      </a>
+      <a class="choice-btn" data-num="Paper">
+        <div class="choice paper" >
+          <img src="img/Paper.png" alt=""  height="115px"  width= "115px">
+        </div>
+      </a>
+    
+    </section>
+  
+    
+  <section class="box" style="display: none;">
+    <div class="choice-btn user" data-num="Rock">
+      <div class=" r">
+        <div class="rr">
+          <h2>YOUR PICKED</h2>
+          <div class="rrr">
+            <div class="Circle1 win-Circle1">
+              <img id="win-Circle1-img" height="90px"  />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div  class="choice-btn text1" data-num="Scissors">
+      <div class="text " data-num="text">
+        <h1>YOU WIN</h1>
+        <h2>AGAINEST PC</h2>
+        <button onclick="window.location.href='index.html'" class="Play_Again">PLAY AGAIN</button>
+    </div>
+    </div>
+    <div href="" class="choice-btn pc" data-num="Paper">
+      <div class="Circle2 win-Circle2" data-num="win">
+        <h2>PC PCIKUP</h2>
+        <img id="win-Circle2-img" height="90px"alt="" />
+      </div>
+    </div>
+  
+  </section>
+
+  
+  <section class="box1" style="display: none;">
+    <div href="" class="choice-btn pc1" data-num="Paper">
+      <div class="Circle2 loss-Circle2" data-num="win">
+        <h2>YOUR PCIKUP</h2>
+        <img id="loss-Circle2-img" height="90px"  alt="" />
+      </div>
+    </div>
+    
+    
+    <div  class="choice-btn text2" data-num="Scissors">
+      <div class="text" data-num="text">
+        <h1>YOU LOST</h1>
+        <h2>AGAINEST PC</h2>
+        <button onclick="window.location.href='index.html'" class="Play_Again">PLAY AGAIN</button>
+    </div>
+    </div>
+    <div class="choice-btn user1" data-num="Rock">
+      <div class=" r">
+        <div class="rr">
+          <h2>PC PICKED</h2>
+          <div class="rrr">
+            <div class="Circle1 loss-Circle1">
+              <img id="loss-Circle1-img" height="90px"  />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <section class="box2 " style="display: none;">
+    <div href="" class="choice-btn user2" data-num="Paper">
+      <div class="Circle2 tie-Circle1" data-num="win">
+        <h2>YOUR PCIKUP</h2>
+        <img id="tie-Circle2-img" height="90px"  alt="" />
+      </div>
+    </div>  
+    <div class=" text3 text">
+      <h1>TIE UP</h1>
+      <button onclick="window.location.href='index.html' " class="Play_Again">REPLAY</button
+        onclick="window.location.href='index.html'">
+    </div>
+    </div>
+    <div class="choice-btn pc2" data-num="Rock">
+      <h2>PC PICKED</h2>
+      <div class="Circle1 tie-Circle2">
+              <img id="tie-Circle1-img" height="90px"  />
+            </div>
+      </div>
+    </div>
+    
+  </section>
+
+    <section class="index-rules">
+      <a class="exit"> <h5>X</h5></a>
+      <div class="rules-details">
+        <h2>Game Rules</h2>
+        <div class="rule">
+          <h5></h5>
+          <p>Rock beats scissors, scissors beat paper, and paper beats rock.</p>
+        </div>
+        <div class="rule">
+          <h5></h5>
+          <p>
+            Agree ahead of time whether you’ll count off “rock, paper, scissors,
+            shoot” or just “rock, paper, scissors.”
+          </p>
+        </div>
+        <div class="rule">
+          <h5></h5>
+          <p>
+            Use rock, paper, scissors to settle minor decisions or simply play
+            to pass the time
+          </p>
+        </div>
+        <div class="rule">
+          <h5></h5>
+          <p>
+            If both players lay down the same hand, each player lays down
+            another hand
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="btn">
+      <button  class="rul">RULES</button>
+      <button onclick="window.location.href='Hurray.html'"  class="next"  >NEXT</button>
+    </div>
+
+    <script src="script.js">
+    </script>
+  </body>
+</html>

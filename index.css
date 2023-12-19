@@ -1,0 +1,737 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Delius+Unicase:wght@400;700&family=Inter:wght@400;500&family=Poppins&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Dangrek&family=Delius+Unicase:wght@400;700&family=Inter:wght@400;500&family=Poppins&family=Roboto:wght@400;500&display=swap'); 
+ *{  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #8CC461;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.title-score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(28, 48, 120, 0.00);
+    margin-top: 62px;
+    
+
+}
+.all{
+    display: flex;
+    justify-content: center;
+    border-radius: 13px;
+    border: 2px solid #FFF;
+}
+.title h2{
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 4px;
+    margin-left: 18px;
+    
+   
+}
+.score{
+    display: flex;
+   gap: 30px;
+    align-items: center;
+   margin-left: 230px;
+
+
+    
+}
+.com-score,.user-score{
+    border-radius: 9px;
+    background: #FFF;
+    width: 139px;
+    height: 128px;
+    text-align: center;
+    margin-right: 10px;
+    
+   
+}
+.com-score h2, .user-score h2{
+    color: #656565;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.7px;
+    padding: 5px;
+    
+    
+}
+.com-score h1, .user-score h1{
+    color: #252525;
+    
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+
+section{
+    margin-bottom: 20px;
+}
+
+.game{
+    display: grid;
+    position: relative;
+    grid-template-columns: (repeat(2, 1fr));
+    grid-template-areas: 
+    'rock scissors'
+    'paper paper';
+    place-items: center;
+    height: 30rem;
+    padding-top: 4rem;
+    margin: 0px 228px;
+    
+}
+
+.choice-btn[data-num ='Paper']{
+    grid-area: paper;
+
+}
+.choice-btn[data-num ='Rock']{
+    grid-area: rock;
+
+}
+.choice-btn[data-num ='Scissors']{
+    grid-area: scissors;
+}
+.game::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 18%;
+    top: 17%;
+    background: url(img/triangle.png) no-repeat;
+    z-index: -1;
+   
+}
+.choice::before{
+    position: absolute;
+    left: -15%;
+    top: -15%;
+    width: 130%;
+    height: 130%;
+    border-radius: 50%;
+}
+
+.choice-btn{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    
+}
+.choice{
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items:center;
+
+}
+
+.scissors{
+    border: #BD00FF solid 20px;
+    
+}
+.paper{
+    margin-top: 60px;
+}
+.rock{
+    border: #0074B6 solid 20px;
+    
+}
+.paper{
+    border: #FFA943 solid 20px;
+}
+
+
+
+.index-rules{
+    width: 325px;
+    height: 300px;
+    border-radius: 13px;
+    border: 7px solid #fff;
+    background-color: #004429;
+    
+    margin-top: -50px;
+    margin-left: 875px;
+    display: none;
+
+
+}
+.Play_Again{
+    cursor: pointer;
+}
+.index-rules h2{
+    text-align: center;
+    margin: 10px;
+    color: white;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    
+
+}
+.rule{
+    display: flex;
+    padding-left:10px ;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.rule h5{
+    
+    width: 8px;
+    height: 8px;
+   
+    flex-shrink: 0;
+    background: #FFD600;
+}
+.rule p{
+    color: #FFF;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* text-align: left; */
+}
+.exit{
+    float: right;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    background: #f00;
+    font-family: 'Dangrek', sans-serif;;
+    border: white solid 8px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: -55px;
+    margin-right: -43px;
+    color: white;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    
+}
+.index-btn{
+    display: flex;
+    text-align: center; 
+    gap: 20px;
+    float: right;
+    margin: 0;
+    margin-right: 90px;
+    margin-top: 0px;
+    
+}
+.rul{
+    width: 119px;
+    /* height: 40px; */
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    background: rgba(217, 217, 217, 0.00)
+}
+
+.rul{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    padding: 6px;
+    margin-bottom: 30px;
+    cursor: pointer;
+   
+    
+}
+
+
+
+/* USER WIN PAGE STYLE START */
+
+.rr h2{
+    position: absolute;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.7px;
+    margin-left: 90px;
+}
+
+.box{
+    display: grid;
+    position: relative;
+    grid-template-columns: (repeat(2, 1fr));
+    grid-template-areas: 
+    'rock  scissors paper';
+    height: 30rem;
+    padding-top: 4rem;
+}
+    
+
+.user{
+    display: grid;
+    place-items:end;
+    margin-bottom: 26px;
+}
+.text1{
+    display: grid;
+    place-items: start;
+    margin-top: 130px;
+}
+.pc{
+    display: grid;
+    place-items: center;
+    margin-right: 150px;
+}
+
+.Circle1{
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left: 35px;
+    position: absolute;
+    margin-top: 35px;
+    display: grid;
+    place-items: center;
+    stroke-width: 16px;
+    filter: drop-shadow(-1px 1px 11px rgba(0, 0, 0, 0.35));
+    cursor: auto;
+}
+
+.Circle2{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    display: grid;
+    place-items: center;
+    cursor: auto;
+}
+
+.Circle2 h2{
+    position: absolute;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.7px;
+    margin-bottom: 278px;
+}
+
+.next{
+   
+    width: 119px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    background: rgba(217, 217, 217, 0.00);
+    display: none;
+    
+}
+.next,.rul{
+    
+    text-decoration: none;
+    color: #FFF;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    padding: 6px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    margin-top: 0px;
+   
+    
+}
+
+/* USER WIN PAGE STYLE END */
+
+
+
+/* USER LOSS PAGE STYLE START */
+
+.r{
+    width: 370px;
+    height: 370px;
+    border-radius: 350px;
+    background: rgba(46, 154, 37, 0.39);
+    box-shadow: 0px 1px 62px 0px rgba(0, 0, 0, 0.13);
+}
+.rr{
+    width: 320px;
+    height: 320px;
+    flex-shrink: 0;
+    border-radius: 300px;
+    background: rgba(29, 168, 43, 0.79);
+    margin-left: 25px;
+    margin-top: 24px;
+    position: absolute;
+}
+.rr h2{
+    position: absolute;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.7px;
+    margin-left: 90px;
+    margin-top: 16px;
+}
+.rrr{
+    width: 270px;
+    height: 270px;
+    background-color: #3b67202e;
+    border-radius: 250px;
+    margin-left: 25px;
+    position: absolute;
+    margin-top: 24px;
+    
+}
+
+
+.box1{
+    display: grid;
+    position: relative;
+    grid-template-columns: (repeat(2, 1fr));
+    grid-template-areas: 
+    'paper scissors rock'; 
+    height: 30rem;
+    padding-top: 4rem; 
+}
+
+.user1{
+    display: grid;
+    place-items:start;
+    /* margin-bottom: 112px; */
+    
+
+}
+.text2{
+    display: grid;
+    place-items: end;
+    margin-bottom: 174px;
+    
+}
+.pc1{
+    display: grid;
+    place-items: center;
+    margin-bottom: 60px;
+    margin-left: 174px;
+   
+}
+
+
+.text{
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+    color: #FFF;
+}
+.text h1{
+    font-size: 39px;
+    letter-spacing: 3.9px;
+
+}
+.text button{
+    width: 174px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background: #FFF;
+    border: none;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+
+}
+.text h2{
+    font-size: 25px;
+    letter-spacing: 2.5px;
+}
+
+.Loss-rules{
+    width: 325px;
+    height: 300px;
+    border-radius: 13px;
+    border: 7px solid #fff;
+    background-color: #004429;
+    margin-left: 890px;
+    display: none;
+    
+    
+}
+.Loss-rules h2{
+    text-align: center;
+    margin: 10px;
+    color: white;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    
+
+}
+.rule{
+    display: flex;
+    padding-left:10px ;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.btn{
+    display: flex;
+    text-align: center; 
+    gap: 20px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 0px;
+    
+    
+}
+
+/* USER LOSS PAGE STYLE END */
+
+
+
+
+/* TIE PAGE STYLE START */
+
+.box2{
+    display: grid;
+    position: relative;
+    grid-template-columns: (repeat(2, 1fr));
+    grid-template-areas: 
+    'paper scissors rock';
+    place-items: center;
+    height: 30rem;
+    margin-left: 118px;
+    margin-right: 244px;
+    
+}
+.user2{
+    display: grid;
+    place-items:center;
+    
+}
+.text3{
+    display: grid;
+    place-items: center;
+    margin-right: 95px;
+}
+.pc2{
+    display: grid;
+    place-items: center;
+    
+}
+.pc2 h2{
+    position: absolute;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.7px;
+    margin-bottom: 278px;
+
+}
+
+/* TIE PAGE STYLE END */
+
+/* HURRAY PAGE STYLE START*/
+.img{
+    
+    display: flex;
+    justify-content: center;  
+    margin-top: 86px;
+}
+.won{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: normal; 
+    font-weight: 600;
+}
+.won h1{
+    font-size: 91px;
+    line-height: normal;
+    letter-spacing: 9.1px;
+    margin: 0;    
+    margin-top: 32px ;
+}
+.won h3{
+ font-size: 41px;
+ line-height: normal;
+ letter-spacing: 4.1px;
+ margin-right: 25px;
+ margin: 0;    
+}
+button{
+    color: #6B6B6B;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    width: 174px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background: #FFF;
+    margin-top: 58px;
+    border: none;
+    cursor: pointer;
+}
+/* HURRAY PAGE STYLE START*/
+
+@media screen and (max-width:1024px) {
+
+  
+    .game{
+        margin: 0px 118px;
+    }
+    .index-rules {
+        
+        margin-left: 647px;
+        /* display: none; */
+    }
+}
+@media (max-width:890px) {
+
+  
+    .game::before{
+        left: 11%;
+    }
+    .index-rules {
+        
+        margin-left: 500px;
+        margin-top: 20px;
+    }
+}
+@media(max-width:660px) {
+
+    .title-score{
+        justify-content: start;
+        margin-left: 32px;
+        
+    }
+    .game{
+        margin-left: 115px;
+    }
+    .game::before{
+        width: 130%;
+    }
+    .scissors{
+        margin-left: 165px;
+
+    }
+    .index-rules {
+        
+        margin-left: 490px;
+        
+    }
+    .btn{
+        margin-left: 670px;
+        /* margin-top: 68px; */
+        float: left;
+    }
+}
+
+@media(max-width:450px) {
+        .game::before{
+            width: 290%;
+        }
+        .box{
+            grid-template-areas: 'rock'
+                                 'scissors'
+                                 'paper';
+            margin-left:230px ;
+            margin-top: 200px;
+                                 
+        }
+        .box1{
+            grid-template-areas: 'paper'
+                                 'scissors'
+                                 'rock';
+            margin-left:230px ;
+            margin-top: 90px;
+                                 
+        }
+        .pc1{
+            margin-left: 0px;
+        }
+        .box2{
+            grid-template-areas: 'paper'
+                                 'scissors'
+                                 'rock';
+            margin-left:320px ;
+            margin-top: 118px;
+        }
+        .text1{
+            margin-top: 0px;
+            margin-left: 100px;
+        }
+        .text2{
+            margin-bottom: 0px;
+            margin-top: 20px;
+            margin-right: 80px;
+        }
+        .text3{
+            margin-right: 0px;
+            margin-top: 50px;
+        }
+        .pc{
+            margin-right: 0px;
+            margin-top: 100px;
+        }
+        .pc2{
+            margin-top: 200px;
+        }
+        .index-rules{
+            margin-left: 560px;
+            margin-top: 385px;
+        }
+        .btn{
+            margin-right:0px ;
+            margin-left: 677px;
+            /* margin-top: 422px; */
+        }
+
+}

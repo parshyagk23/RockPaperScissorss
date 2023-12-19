@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+    
+    
+</head>
+<body>
+    
+    <div class="img"  >
+        <img src="img/Stsr.png" alt=""  height="297px"; 
+        width="504px" >
+    </div>
+    <div class="won">
+        <h1>HURRAY!!</h1>
+        <H3>YOU WON THE GAME</H3>
+        <button onclick="window.location.href='index.html'">PLAY AGAIN</button>
+    </div>
+
+</section>
+<section class="index-rules">
+  <a class="exit">
+    <h5>X</h5>
+  </a>
+  <div class="rules-details">
+    <h2>Game Rules</h2>
+    <div class="rule">
+      <h5></h5>
+      <p>Rock beats scissors, scissors beat paper, and paper beats rock.</p>
+    </div>
+    <div class="rule">
+      <h5></h5>
+      <p>
+        Agree ahead of time whether you’ll count off “rock, paper, scissors,
+        shoot” or just “rock, paper, scissors.”
+      </p>
+    </div>
+    <div class="rule">
+      <h5></h5>
+      <p>
+        Use rock, paper, scissors to settle minor decisions or simply play
+        to pass the time
+      </p>
+    </div>
+    <div class="rule">
+      <h5></h5>
+      <p>
+        If both players lay down the same hand, each player lays down
+        another hand
+      </p>
+    </div>
+  </div>
+</section>
+
+
+    <div class="index-btn">
+        <button class="rul">RULES</button>
+    
+      </div>
+
+      <script>
+
+        const rulbtn = document.querySelector('.rul');
+        const rules = document.querySelector('.index-rules');
+        const exit = document.querySelector('.exit');
+
+        rulbtn.addEventListener('click', function () {
+            rules.style.display= 'block'
+            rules.style.marginTop='0px'
+            rulbtn.style.margin ='0px'
+            rulbtn.style.marginBottom ='40px'
+
+           })
+           exit.addEventListener('click', function () {
+             rules.style.display='none'
+           })
+
+
+      </script>
+</body>
+</html>
