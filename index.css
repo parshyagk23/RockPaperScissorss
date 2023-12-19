@@ -735,3 +735,8 @@ button{
         }
 
 }
+@media(max-width:360px) {
+    .game::before{
+        width: 400%;
+    }
+}
